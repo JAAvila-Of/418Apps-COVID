@@ -13,8 +13,23 @@
     title: "Vacunación Covid-19 en Perú",
     description:
       "Mira el estado de la vacunación contra el Covid-19 en el Perú con datos oficiales del gobierno.",
-    image: "",
+    image: "https://418-apps-covid.vercel.app/og.jpg",
     imageAlt: "Portada de App",
+  }}
+  openGraph={{
+    title: "Vacunación Covid-19 en Perú",
+    description:
+      "Mira el estado de la vacunación contra el Covid-19 en el Perú con datos oficiales del gobierno.",
+    type: "article",
+    url: "https://418-apps-covid.vercel.app",
+    images: [
+      {
+        url: "https://418-apps-covid.vercel.app/og.jpg",
+        width: 1200,
+        height: 627,
+        alt: "progreso_de_la_vacunacion_peru",
+      },
+    ],
   }}
 />
 
