@@ -1,0 +1,98 @@
+body {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: "circular";
+  src: url("./build/fonts/Circular/book/860c3ec7bbc5da3e97233ccecafe512e.woff2")
+      format("woff2"),
+    url("./build/fonts/Circular/book/860c3ec7bbc5da3e97233ccecafe512e.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "circularbold";
+  src: url("./build/fonts/Circular/bold/961a181da27e7cbc072ec2fb5bbfe2a9.woff2")
+      format("woff2"),
+    url("./build/fonts/Circular/bold/961a181da27e7cbc072ec2fb5bbfe2a9.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "circularblack";
+  src: url("./build/fonts/Circular/black/f1a22f6f15d272c7aa56da8b2c91f5e5.woff2")
+      format("woff2"),
+    url("./build/fonts/Circular/black/f1a22f6f15d272c7aa56da8b2c91f5e5.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "circularmedium";
+  src: url("./build/fonts/Circular/medium/9475d6a0b79c164f9f605673714e75d9.woff2")
+      format("woff2"),
+    url("./build/fonts/Circular/medium/9475d6a0b79c164f9f605673714e75d9.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "circularitalic";
+  src: url("./build/fonts/Circular/italic/82e5b6ce5cb6f9942bdd08543ef2c864.woff2")
+      format("woff2"),
+    url("./build/fonts/Circular/italic/82e5b6ce5cb6f9942bdd08543ef2c864.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.scroll-journal::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+  cursor: pointer;
+  /*background-color: rgba(229, 231, 235, var(--bg-opacity));*/
+}
+.scroll-journal::-webkit-scrollbar-track {
+  background-color: rgba(229, 231, 235, var(--bg-opacity));
+  cursor: pointer;
+  /*background: red;*/
+}
+.scroll-journal::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color: #a0aec0;
+  /*outline: 1px solid slategrey;*/
+}
+
+.dark .apexcharts-menu {
+  background: #1f2937;
+}
+
+.dark .apexcharts-menu .apexcharts-menu-item:hover {
+  background: #161d27;
+}
+
+.apexcharts-menu .apexcharts-menu-item:hover {
+  background: #eee;
+}
+
+.apexcharts-menu {
+  background: #fff;
+}
+
+[data-scroll] {
+  opacity: 0;
+  transform: translateY(6rem) scale(0.93);
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
