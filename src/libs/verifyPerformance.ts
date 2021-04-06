@@ -1,7 +1,6 @@
 import UA from "ua-parser-js";
 
 const processors = window.navigator.hardwareConcurrency;
-console.log(processors);
 
 export const verify = () => {
   const ua = new UA();

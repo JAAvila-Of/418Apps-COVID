@@ -2,7 +2,8 @@
   import { tweened } from "svelte/motion";
   import { cubicOut } from "svelte/easing";
 
-  export let color: string = "blue";
+  export let foreColor: string = "bg-blue-400";
+  export let backColor: string = "bg-blue-600";
   export let defaultValue: number = 0;
 
   export const changeProgress = (f: number) => {
@@ -18,10 +19,10 @@
 </script>
 
 <div
-  class="w-full block rounded-full bg-{color}-400 relative h-6 overflow-hidden shadow"
+  class="w-full block rounded-full {foreColor} relative h-6 overflow-hidden shadow"
 >
   <div
-    class="rounded-full bg-{color}-600  h-full "
+    class="rounded-full {backColor}  h-full "
     style="width:{$progress * 100}%"
   />
   <div class="absolute right-2 inset-y-0 text-gray-200 font-normal">

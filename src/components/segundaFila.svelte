@@ -9,11 +9,9 @@
   export const updateData = (parcial: number, total: number) => {};
 
   $: {
-    try {
+    if (progressComponentParcial && progressComponentTotal) {
       progressComponentParcial.changeProgress($storeDataDep.g_parcial);
       progressComponentTotal.changeProgress($storeDataDep.g_total);
-    } catch (error) {
-      console.log(error);
     }
   }
 </script>
@@ -89,7 +87,8 @@
       <div class="w-full h-12">
         <Progress
           bind:this={progressComponentTotal}
-          color="indigo"
+          foreColor="bg-indigo-400"
+          backColor="bg-indigo-600"
           defaultValue={$storeDataDep.g_total}
         />
         <div class="uppercase  text-xs">dosis total</div>

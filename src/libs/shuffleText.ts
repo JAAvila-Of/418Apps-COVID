@@ -10,7 +10,7 @@ interface IOptionRandom {
 
 const options: IOptionRandom = {
   timeout: 5,
-  iterations: 10,
+  iterations: 7,
   characters: [
     "1",
     "2",

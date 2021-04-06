@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <title>Svelte app</title>
+    <title>Vacunación covid | Perú</title>
 
     <link rel="manifest" href="/manifest.json" />
     <link rel="icon" type="image/png" href="/favicon.png" />
@@ -25,7 +25,7 @@
     <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
-          navigator.serviceWorker.register("/service-worker.js").then((reg) => {
+          navigator.serviceWorker.register("/sw.js").then((reg) => {
             console.log("Service worker registered.", reg);
           });
         });

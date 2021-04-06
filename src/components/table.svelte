@@ -10,6 +10,8 @@
   import { slide } from "svelte/transition";
   import { quintOut } from "svelte/easing";
 
+  import HIcon from "../components/hamburgerIcon.svelte";
+
   interface IDataDep {
     dep: string;
     p: string;
@@ -141,11 +143,12 @@
   <div
     class="normal:bg-blur w-60 xs:w-10/12 normal:shadow semiflat:shadow semiflat:bg-opacity-10 normal:bg-opacity-10 semiflat:bg-gray-600 normal:bg-gray-600 mx-auto rounded-lg  mt-16 bg-gray-300 text-center h-auto py-4 px-3 dark:normal:bg-gray-800 dark:normal:bg-opacity-80 dark:semiflat:bg-gray-800 dark:semiflat:bg-opacity-80 dark:bg-gray-800"
   >
-    <div on:click={toggle} class="cursor-pointer">
-      <span class=" text-2xl font-semibold">TABLA GENERAL</span>
-      <span class=" float-right text-3xl place-self-center"
-        >{showTable ? "-" : "+"}</span
-      >
+    <div on:click={toggle} class="cursor-pointer relative">
+      <span class=" text-2xl font-semibold -ml-5 sm:-ml-0">TABLA GENERAL</span>
+      <!-- <span class=" float-right text-3xl ">{showTable ? "-" : "+"}</span> -->
+      <div class="absolute -right-1.5 -top-1.5">
+        <HIcon show={showTable} />
+      </div>
     </div>
   </div>
 {/if}

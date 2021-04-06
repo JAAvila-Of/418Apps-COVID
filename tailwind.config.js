@@ -2,9 +2,15 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
+  mode: "jit",
   purge: {
-    content: ["./src/**/*.svelte", "./src/**/*.ts", "./public/*.html"],
-    enabled: false, // disable purge in dev
+    content: [
+      "./src/**/*.svelte",
+      "./src/**/*.ts",
+      "./public/*.html",
+      "./node_modules/@fouita/data-table/src/*.svelte",
+    ],
+    enabled: true, // disable purge in dev
   },
   future: {
     // for tailwind 2.0 compat

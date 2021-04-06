@@ -2,7 +2,7 @@
   <defs>
     <rect stroke='#111827' stroke-width='0.47' width='1' height='1' id='s' />
     <pattern id='a' width='3' height='3' patternUnits='userSpaceOnUse'
-      patternTransform='scale(31.65) translate(-968.4 -726.3)'>
+      patternTransform='scale(24.4) translate(-959.02 -719.26)'>
       <use fill='#161d2b' href='#s' y='2' />
       <use fill='#161d2b' href='#s' x='1' y='2' />
       <use fill='#1b2130' href='#s' x='2' y='2' />
@@ -11,7 +11,7 @@
       <use fill='#1f2634' href='#s' x='1' y='1' />
     </pattern>
     <pattern id='b' width='7' height='11' patternUnits='userSpaceOnUse'
-      patternTransform='scale(31.65) translate(-968.4 -726.3)'>
+      patternTransform='scale(24.4) translate(-959.02 -719.26)'>
       <g fill='#242a38'>
         <use href='#s' />
         <use href='#s' y='5' />
@@ -27,7 +27,7 @@
       </g>
     </pattern>
     <pattern id='h' width='5' height='13' patternUnits='userSpaceOnUse'
-      patternTransform='scale(31.65) translate(-968.4 -726.3)'>
+      patternTransform='scale(24.4) translate(-959.02 -719.26)'>
       <g fill='#242a38'>
         <use href='#s' y='5' />
         <use href='#s' y='8' />
@@ -45,7 +45,7 @@
       </g>
     </pattern>
     <pattern id='c' width='17' height='13' patternUnits='userSpaceOnUse'
-      patternTransform='scale(31.65) translate(-968.4 -726.3)'>
+      patternTransform='scale(24.4) translate(-959.02 -719.26)'>
       <g fill='#292f3d'>
         <use href='#s' y='11' />
         <use href='#s' x='2' y='9' />
@@ -56,7 +56,7 @@
       </g>
     </pattern>
     <pattern id='d' width='19' height='17' patternUnits='userSpaceOnUse'
-      patternTransform='scale(31.65) translate(-968.4 -726.3)'>
+      patternTransform='scale(24.4) translate(-959.02 -719.26)'>
       <g fill='#111827'>
         <use href='#s' y='9' />
         <use href='#s' x='16' y='5' />
@@ -73,7 +73,7 @@
       </g>
     </pattern>
     <pattern id='e' width='47' height='53' patternUnits='userSpaceOnUse'
-      patternTransform='scale(31.65) translate(-968.4 -726.3)'>
+      patternTransform='scale(24.4) translate(-959.02 -719.26)'>
       <g fill='#a34b05'>
         <use href='#s' x='2' y='5' />
         <use href='#s' x='16' y='38' />
@@ -82,7 +82,7 @@
       </g>
     </pattern>
     <pattern id='f' width='59' height='71' patternUnits='userSpaceOnUse'
-      patternTransform='scale(31.65) translate(-968.4 -726.3)'>
+      patternTransform='scale(24.4) translate(-959.02 -719.26)'>
       <g fill='#a34b05'>
         <use href='#s' x='33' y='13' />
         <use href='#s' x='27' y='54' />
@@ -90,7 +90,7 @@
       </g>
     </pattern>
     <pattern id='g' width='139' height='97' patternUnits='userSpaceOnUse'
-      patternTransform='scale(31.65) translate(-968.4 -726.3)'>
+      patternTransform='scale(24.4) translate(-959.02 -719.26)'>
       <g fill='#a34b05'>
         <use href='#s' x='11' y='8' />
         <use href='#s' x='51' y='13' />

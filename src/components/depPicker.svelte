@@ -59,10 +59,8 @@
 
   $: {
     if (store === 1) {
-      try {
+      if (fechas[$storeFec]) {
         base = Object.keys(fechas[$storeFec]).sort();
-      } catch (error) {
-        console.log(error);
       }
     }
   }

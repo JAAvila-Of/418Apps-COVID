@@ -36,6 +36,8 @@
   import ToggleDark from "../components/toggle_night.svelte";
   import SvgBmc from "../components/svg_bmc.svelte";
   import ArrowUp from "../components/svg_arrowHome.svelte";
+  import Footer from "../components/footer.svelte";
+
   import { Scroll } from "../libs/scrollOut";
 
   day.extend(customFormat);
@@ -44,23 +46,15 @@
   let sf: SegundaFila;
   let innerWidth;
   let innerHeight;
-  let loadedTime;
   let timeInitial = new Date();
 
   let dataFab1Row: Array<IDataResultFab>;
   let fabs: Array<string>;
 
-  let w_md: boolean = false;
-
   setClass();
 
   onMount(() => {
     Scroll();
-  });
-
-  window.addEventListener("load", () => {
-    let timeEnd = new Date();
-    loadedTime = timeEnd.getTime() - timeInitial.getTime();
   });
 
   let cht: ChartArea;
@@ -71,16 +65,10 @@
 
     $storeDataDep = mainDep($storeFec, $storeDep);
     $storeEstimated = estimate($storeDepEstimate);
-    if (window.innerWidth >= 768) {
-      w_md = true;
-    } else {
-      w_md = false;
-    }
   })();
 
   let ago: string = day(cnf.fechaActualizacion).locale("es").fromNow();
 
-  let t: boolean = false;
   let timeAgo: string = ago;
 
   const changeFabData = (e): MouseEvent => {
@@ -93,17 +81,7 @@
   }
 </script>
 
-<svelte:window
-  on:resize={() => {
-    if (window.innerWidth >= 768) {
-      w_md = true;
-    } else {
-      w_md = false;
-    }
-  }}
-  bind:innerWidth
-  bind:innerHeight
-/>
+<svelte:window bind:innerWidth bind:innerHeight />
 
 <main class="p-5 font-circular text-gray-700 dark:text-gray-300">
   <div>
@@ -395,44 +373,7 @@
     </section>
   </div>
 </main>
-<footer
-  class="normal:bg-blur w-full h-auto  mx-auto rounded-lg  mt-16 bg-gray-300 semiflat:bg-opacity-20 normal:bg-opacity-20 semiflat:bg-gray-600 normal:bg-gray-600 text-center relative py-7 sm:py-10 dark:normal:bg-gray-800 dark:normal:bg-opacity-80 dark:semiflat:bg-gray-800 dark:semiflat:bg-opacity-80 dark:bg-gray-800 dark:text-gray-300"
->
-  <div
-    class="flex flex-col sm:flex-row sm:justify-center space-y-1 sm:space-y-0 sm:space-x-2 text-sm"
-  >
-    <a
-      href="/#"
-      class="border-b-2 mx-auto sm:mx-1 border-gray-900 dark:border-gray-400 border-dashed"
-    >
-      Desarrollado por JAAvila</a
-    >
-    <span class="hidden sm:block">•</span>
-    <a
-      href="https://github.com/JAAvila-Of"
-      target="_blank"
-      class="border-b-2 mx-auto sm:mx-1 border-gray-900 dark:border-gray-400 border-dashed"
-    >
-      GitHub</a
-    >
-    <span class="hidden sm:block">•</span>
-    <a
-      href="https://www.instagram.com/jaavila_of/"
-      target="_blank"
-      class="border-b-2 mx-auto sm:mx-1 border-gray-900 dark:border-gray-400 border-dashed"
-    >
-      Instagram</a
-    >
-    <span class="hidden sm:block">•</span>
-    <a
-      href="https://twitter.com/JoseAngelAvil18"
-      target="_blank"
-      class="border-b-2 mx-auto sm:mx-1 border-gray-900 dark:border-gray-400 border-dashed"
-    >
-      Twitter</a
-    >
-  </div>
-</footer>
+<Footer />
 
 <style>
   .border-bottom {

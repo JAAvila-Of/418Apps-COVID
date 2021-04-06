@@ -1,11 +1,5 @@
 <script lang="ts">
   import news from "../../public/build/data/finalNews.json";
-
-  console.log(news[0]);
-
-  for (let i = 0; i < 3; i++) {
-    console.log(news[i]);
-  }
 </script>
 
 {#each news as item}
