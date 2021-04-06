@@ -9,7 +9,6 @@
     "validate": "svelte-check"
   },
   "devDependencies": {
-    "@fouita/data-table": "0.0.2",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
@@ -31,6 +30,7 @@
     "ua-parser-js": "^0.7.27"
   },
   "dependencies": {
+    "@fouita/data-table": "0.0.2",
     "apexcharts": "^3.26.0",
     "dayjs": "^1.10.4",
     "postcss": "^8.2.8",
