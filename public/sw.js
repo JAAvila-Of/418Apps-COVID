@@ -116,11 +116,11 @@ define("./sw.js", ["./workbox-f47baefc"], function (e) {
         },
         {
           url: "build/bundle.css",
-          revision: "631defb04348672043bd9ac6c787b922",
+          revision: "5fc888d9712c0e48a74f837c03c7c2b6",
         },
         {
           url: "build/bundle.js",
-          revision: "6007eca5645c5b366efeba44315f3c92",
+          revision: "56b2ba199c1070726a0f220ae4f30372",
         },
         {
           url:
@@ -202,12 +202,12 @@ define("./sw.js", ["./workbox-f47baefc"], function (e) {
           url: "images/icons/icon-512x512.png",
           revision: "d01f769a3c659110b9b7bbde2e7e338c",
         },
-        { url: "index.html", revision: "02a4d46d353dfd2c135091b5887fc981" },
+        { url: "index.html", revision: "7f6f2718fbd85f04a7561cdddd3592e8" },
         { url: "offline.html", revision: "efeff0e4d85131193dfbdef404fc2197" },
         { url: "og.jpg", revision: "e3f18e4c0e29f54e9e0f2f4f4bc19659" },
         {
           url: "scripts/install.js",
-          revision: "26cabfda9c7c75bd13be3d8d4ecdea9c",
+          revision: "21a2efa8edc607cf37c43da4234e56dc",
         },
       ],
       {}

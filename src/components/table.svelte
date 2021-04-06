@@ -1,5 +1,5 @@
 <script lang="ts">
-  import DataTable from "@fouita/data-table";
+  import DataTable from "./DataTable/DataTable.svelte";
   import {
     poblacion,
     nombres,
@@ -70,10 +70,6 @@
   }
 
   const sortFn = (label: string) => {
-    /* let g = data.filter((value) => {
-      return value.dep == "TOTAL" ? true : false;
-    })[0]; */
-
     return {
       asc: () => {
         let g = data.filter((value) => {
