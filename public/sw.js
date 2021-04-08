@@ -139,6 +139,20 @@ define("./sw.js", ["./workbox-bd95e005"], function (e) {
       "GET"
     ),
     e.registerRoute(
+      /^https:\/\/lh3\.(?:googleusercontent)\.com\/.*/i,
+      new e.CacheFirst({
+        cacheName: "static-gimages-assets",
+        plugins: [
+          new e.ExpirationPlugin({
+            maxEntries: 64,
+            maxAgeSeconds: 604800,
+            purgeOnQuotaError: !0,
+          }),
+        ],
+      }),
+      "GET"
+    ),
+    e.registerRoute(
       /.*/i,
       new e.NetworkFirst({
         cacheName: "static-others-assets",

@@ -68,6 +68,18 @@ module.exports = {
       },
     },
     {
+      urlPattern: /^https:\/\/lh3\.(?:googleusercontent)\.com\/.*/i,
+      handler: "CacheFirst",
+      options: {
+        cacheName: "static-gimages-assets",
+        expiration: {
+          maxEntries: 64,
+          maxAgeSeconds: 7 * 86400,
+          purgeOnQuotaError: !0,
+        },
+      },
+    },
+    {
       urlPattern: /.*/i,
       handler: "NetworkFirst",
       options: {
