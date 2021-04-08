@@ -68,7 +68,7 @@ module.exports = {
       },
     },
     {
-      urlPattern: /^https:\/\/lh3\.(?:googleusercontent)\.com\/.*/i,
+      urlPattern: /^https:\/\/lh3\.googleusercontent\.com\/.*/i,
       handler: "CacheFirst",
       options: {
         cacheName: "static-gimages-assets",
