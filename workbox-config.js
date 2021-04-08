@@ -69,7 +69,7 @@ module.exports = {
     },
     {
       urlPattern: /^https:\/\/lh3\.googleusercontent\.com\/.*/i,
-      handler: "CacheFirst",
+      handler: "StaleWhileRevalidate",
       options: {
         cacheName: "static-gimages-assets",
         expiration: {
