@@ -1,6 +1,6 @@
 module.exports = {
   globDirectory: "public/",
-  globPatterns: ["**/*.{css,js,html}"],
+  globPatterns: [],
   swDest: "public/sw.js",
   clientsClaim: true,
   skipWaiting: true,
@@ -8,7 +8,7 @@ module.exports = {
   globIgnores: ["public/build/data/*", "og.jpg"],
   runtimeCaching: [
     {
-      urlPattern: "/",
+      urlPattern: "/index.html",
       handler: "NetworkFirst",
       options: {
         cacheName: "start-url",
