@@ -8,7 +8,7 @@ module.exports = {
   globIgnores: ["public/build/data/*", "og.jpg"],
   runtimeCaching: [
     {
-      urlPattern: "/index.html",
+      urlPattern: "/",
       handler: "NetworkFirst",
       options: {
         cacheName: "start-url",
