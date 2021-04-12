@@ -3,10 +3,12 @@
   "version": "1.0.1",
   "private": true,
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
+    "build": "npm run prepare:prod && rollup -c",
+    "dev": "npm run prepare:dev && rollup -c -w",
     "start": "sirv public --single --host",
-    "validate": "svelte-check"
+    "validate": "svelte-check",
+    "prepare:dev": "node prepare.js dev",
+    "prepare:prod": "node prepare.js prod"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
@@ -32,6 +34,7 @@
   "dependencies": {
     "apexcharts": "^3.26.0",
     "dayjs": "^1.10.4",
+    "fs-extra": "^9.1.0",
     "postcss": "^8.2.8",
     "scroll-out": "^2.2.12",
     "sirv-cli": "^1.0.0",
