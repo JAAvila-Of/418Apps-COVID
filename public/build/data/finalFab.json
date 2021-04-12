@@ -1,12 +1,1 @@
-{
-  "ASTRAZENECA": { "logo": "./build/assets/ASTRAZENECA.png", "total": 0 },
-  "PFIZER": { "logo": "./build/assets/PFIZER.png", "total": 300441 },
-  "JANSSEN": { "logo": "./build/assets/JANSSEN.png", "total": 0 },
-  "MODERNA": { "logo": "./build/assets/MODERNA.png", "total": 0 },
-  "SANOFI": { "logo": "./build/assets/SANOFI.png", "total": 0 },
-  "CUREVAC": { "logo": "./build/assets/CUREVAC.png", "total": 0 },
-  "NOVAVAX": { "logo": "./build/assets/NOVAVAX.png", "total": 0 },
-  "GAMALEYA": { "logo": "./build/assets/GAMALEYA.png", "total": 0 },
-  "SINOPHARM": { "logo": "./build/assets/SINOPHARM.png", "total": 746537 },
-  "GLOBAL": { "logo": "./build/assets/GLOBAL.png", "total": 1046978 }
-}
+{"ASTRAZENECA":{"logo":"./build/assets/ASTRAZENECA.png","total":0},"PFIZER":{"logo":"./build/assets/PFIZER.png","total":304218},"JANSSEN":{"logo":"./build/assets/JANSSEN.png","total":0},"MODERNA":{"logo":"./build/assets/MODERNA.png","total":0},"SANOFI":{"logo":"./build/assets/SANOFI.png","total":0},"CUREVAC":{"logo":"./build/assets/CUREVAC.png","total":0},"NOVAVAX":{"logo":"./build/assets/NOVAVAX.png","total":0},"GAMALEYA":{"logo":"./build/assets/GAMALEYA.png","total":0},"SINOPHARM":{"logo":"./build/assets/SINOPHARM.png","total":748253},"GLOBAL":{"logo":"./build/assets/GLOBAL.png","total":1052471}}

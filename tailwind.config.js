@@ -10,7 +10,7 @@ module.exports = {
       "./public/*.html",
       "./node_modules/@fouita/data-table/src/*.svelte",
     ],
-    enabled: true, // disable purge in dev
+    enabled: false, // disable purge in dev
   },
   future: {
     // for tailwind 2.0 compat
