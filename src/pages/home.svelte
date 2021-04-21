@@ -127,6 +127,12 @@
     <section class="mt-7">
       <div class="grid grid-cols-1 gap-2  w-full">
         <!-- PRIMER LINEA DEL GRID -->
+        <div class="w-full text-center mb-4 mt-3" data-scroll>
+          <span
+            class="text-3xl  font-semibold border-b-2 border-dashed border-gray-900 dark:border-gray-400"
+            >POR FABRICANTE</span
+          >
+        </div>
         <div
           class="grid grid-cols-1 sm:grid-cols-5 sm:gap-4 sm:h-60  w-60 xs:w-10/12  lg:w-limit mx-auto"
           data-scroll
@@ -136,7 +142,7 @@
           >
             <div class="grid grid-cols-1">
               <div class=" col-span-1">
-                <div class="uppercase mt-2">
+                <div class="uppercase mt-2 dark:text-gray-400">
                   dosis solicitadas <span class="text-xs align-top font-normal"
                     >[3]</span
                   >
@@ -151,7 +157,7 @@
                 >
                   {convertNumber.generate(dataFab1Row[$storeFab].v_s)}
                 </div>
-                <div class="uppercase mt-4">
+                <div class="uppercase mt-4 dark:text-gray-400">
                   dosis entregadas <span class="text-xs align-top font-normal"
                     >[4]</span
                   >
@@ -169,7 +175,7 @@
                 <div class="flex w-full justify-center">
                   <hr class=" w-6/12  border-gray-400 my-2" />
                 </div>
-                <div class="uppercase text-xs">
+                <div class="uppercase text-xs dark:text-gray-400">
                   % dosis entregadas <span class="text-xs align-top font-normal"
                     >[7]</span
                   >
@@ -230,7 +236,7 @@
                     <div class=" uppercase text-2xl">
                       {$storeFab}
                     </div>
-                    <div class="uppercase text-base mt-4">
+                    <div class="uppercase text-base mt-4 dark:text-gray-400">
                       dosis entregadas <span
                         class="text-xs align-top font-normal">[4]</span
                       >
@@ -245,7 +251,7 @@
                     >
                       {convertNumber.generate(dataFab1Row[$storeFab].v_e)}
                     </div>
-                    <div class="uppercase text-base mt-2">
+                    <div class="uppercase text-base mt-2 dark:text-gray-400">
                       dosis aplicadas <span
                         class="text-xs align-top font-normal">[5]</span
                       >
@@ -260,7 +266,7 @@
                     >
                       {convertNumber.generate(dataFab1Row[$storeFab].v_a)}
                     </div>
-                    <div class="uppercase text-xs mt-2">
+                    <div class="uppercase text-xs mt-2 dark:text-gray-400">
                       % dosis aplicadas <span
                         class="text-xs align-top font-normal">[8]</span
                       >
@@ -280,7 +286,15 @@
         </div>
         <!-- FIN PRIMER LINEA DEL GRID -->
         <div data-scroll>
-          <div class=" flex justify-center font-circularmedium text-lg mt-16">
+          <div
+            class=" flex flex-col items-center font-circularmedium text-lg mt-16"
+          >
+            <div class="w-full text-center mb-4 ">
+              <span
+                class="text-3xl  font-semibold border-b-2 border-dashed border-gray-900 dark:border-gray-400"
+                >POR REGIONES</span
+              >
+            </div>
             <div class="flex flex-col sm:flex-row sm:space-x-4 ">
               <DatePicker />
               <DepPicker store={1} />
@@ -315,7 +329,12 @@
         </div>
         <div data-scroll>
           <div class="uppercase text-3xl text-center  font-semibold  mt-16">
-            <div>gráfico</div>
+            <div class="w-full text-center mb-4 ">
+              <span
+                class="text-3xl uppercase  font-semibold border-b-2 border-dashed border-gray-900 dark:border-gray-400"
+                >estadísticas</span
+              >
+            </div>
           </div>
           <div class=" flex justify-center font-circularmedium text-lg mt-3">
             <div class="flex flex-col sm:flex-row sm:space-x-4 ">

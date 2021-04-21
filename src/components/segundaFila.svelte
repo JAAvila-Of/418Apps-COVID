@@ -23,7 +23,7 @@
     class="normal:bg-blur font-semibold flex items-center  normal:shadow semiflat:shadow semiflat:bg-opacity-20 normal:bg-opacity-20 rounded-lg p-2 semiflat:bg-gray-600 normal:bg-gray-600 bg-gray-300 text-center dark:normal:bg-gray-800 dark:normal:bg-opacity-80 dark:semiflat:bg-gray-800 dark:semiflat:bg-opacity-80 dark:bg-gray-800"
   >
     <div class="w-full">
-      <div class="uppercase text-xl">
+      <div class="uppercase text-xl dark:text-gray-400">
         dosis parcial <span class="text-xs align-top font-normal">[1]</span>
       </div>
       <div
@@ -33,7 +33,7 @@
       >
         {$storeDataDep.dosis_parcial}
       </div>
-      <div class="uppercase text-sm mt-4">
+      <div class="uppercase text-sm mt-4 dark:text-gray-400">
         % sobre entregadas <span class="text-xs align-top font-normal">[9]</span
         >
       </div>
@@ -50,7 +50,7 @@
     class="normal:bg-blur text-center font-semibold flex items-center justify-center normal:shadow semiflat:shadow semiflat:bg-opacity-20 normal:bg-opacity-20 rounded-lg p-2 semiflat:bg-gray-600 normal:bg-gray-600 bg-gray-300 dark:normal:bg-gray-800 dark:normal:bg-opacity-80 dark:semiflat:bg-gray-800 dark:semiflat:bg-opacity-80 dark:bg-gray-800"
   >
     <div class="w-full">
-      <div class="uppercase text-xl">
+      <div class="uppercase text-xl dark:text-gray-400">
         dosis total <span class="text-xs align-top font-normal">[2]</span>
       </div>
       <div
@@ -60,7 +60,7 @@
       >
         {$storeDataDep.dosis_total}
       </div>
-      <div class="uppercase text-sm mt-4">
+      <div class="uppercase text-sm mt-4 dark:text-gray-400">
         % sobre parcial <span class="text-xs align-top font-normal">[10]</span>
       </div>
       <div
@@ -100,7 +100,7 @@
           data-random={shuffle($storeDataDep.habitantes, "r2-h")}
           >{$storeDataDep.habitantes}</span
         >
-        <span class="capitalize text-xs">habitantes</span>
+        <span class="capitalize text-xs dark:text-gray-400">habitantes</span>
       </div>
     </div>
   </div>
